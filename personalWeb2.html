@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lamar | Personal Website</title>
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --rose: #eec9d2;
+      --dusty-pink: #d8a7b1;
+      --background: #fff6f8;
+      --text: #3a3a3a;
+      --accent: #c98fa3;
+      --divider: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--dusty-pink);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      animation: fadeInDown 1.5s ease-out;
+    }
+
+    nav {
+      margin-top: 15px;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--rose);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      color: var(--accent);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section-content {
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      height: 40px;
+      background-color: var(--divider);
+      margin: 0 auto;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--dusty-pink);
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #topBtn:hover {
+      background-color: var(--dusty-pink);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Lamar</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <div class="section-title">About Me</div>
+    <div class="section-content">
+      <p>Hi! I'm Lamar, an Information Technology student and currently a tech employee at a private company. I enjoy designing, building, and improving digital experiences. I'm passionate about both creativity and logic, which is why I enjoy front-end design as much as backend logic.</p>
+      <p>I’m driven, curious, and always eager to explore new technologies. I believe that good design and clean code go hand in hand.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="skills" data-aos="fade-up">
+    <div class="section-title">Skills</div>
+    <div class="section-content">
+      <ul>
+        <li>HTML & CSS – Clean and responsive layouts</li>
+        <li>JavaScript – Interactivity and user experience</li>
+        <li>C++ & Java – Problem solving, object-oriented programming</li>
+        <li>Database Design – Storing and managing data effectively</li>
+        <li>Tinkercad – 3D modeling and robotics (5DOF arm)</li>
+        <li>Fast learning and debugging complex issues</li>
+        <li>Team collaboration and self-learning</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="projects" data-aos="fade-up">
+    <div class="section-title">Projects</div>
+    <div class="section-content">
+      <ul>
+        <li>📌 <strong>Company Website</strong> — Designed and developed a full website for the company I work at, including contact forms and responsive layout.</li>
+        <li>🌸 <strong>Rose Website Design</strong> — Created a soft feminine website inspired by floral and elegant themes.</li>
+        <li>💻 <strong>University C++ Project</strong> — Built a C++ program as part of a university course, focusing on logic, input/output, and modular design.</li>
+        <li>🏥 <strong>Software Architecture Project</strong> — Designed and analyzed systems for hospital management and school administration. Focused on data flow, system components, and architectural patterns.</li>
+        <li>🤖 <strong>Robotic Arm (5DOF)</strong> — Modeled and simulated a robotic arm using Tinkercad for learning about movement and mechanical structure.</li>
+        <li>🌐 <strong>Personal Portfolio</strong> — This current website you're browsing!</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact" data-aos="fade-up">
+    <div class="section-title">Contact</div>
+    <div class="section-content">
+      <p>Email: lamar@example.com</p>
+      
+      <p>GitHub: <a href="https://github.com/Lmar2003m" target="_blank">github.com/lamar</a></p>
+    </div>
+  </section>
+
+  <footer>
+    
+  </footer>
+
+  <button onclick="topFunction()" id="topBtn" title="Back to Top">↑</button>
+
+  <!-- AOS Scroll Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+
+  <!-- Back to Top Button Script -->
+  <script>
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
